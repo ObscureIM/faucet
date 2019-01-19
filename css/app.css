@@ -1,0 +1,153 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: 0000000
+}
+
+.wrapper {
+    text-align: center;
+}
+
+.square_btn {
+    display: inline-block;
+    padding: 0.3em 1em;
+    text-decoration: none;
+    color: #67c5ff;
+    border: solid 2px #67c5ff;
+    border-radius: 3px;
+    transition: .4s;
+    position: relative;
+}
+
+.square_btn:hover {
+    background: #67c5ff;
+    color: white;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  padding: 3rem 1.5rem 1rem;
+}
+
+.navbar-item img {
+  max-height: 3.5rem !important;
+}
+
+.column-header {
+  display: block;
+  background-color: #00853d;
+}
+
+.is-trtl-black {
+  background-color: #212721 !important;
+  color: #fff !important;
+}
+
+.is-trtl-green {
+  background-color: #000000 !important;
+  color: #fff !important;
+}
+
+.navbar-item {
+  font-weight: bold !important;
+}
+
+.same-height {
+  align-items: stretch;
+  min-height: 293px;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.field-names {
+  font-weight: 500;
+}
+
+.sorting,
+.sorting_asc,
+.sorting_desc {
+  background: none !important;
+}
+
+#transactionPool,
+#recentBlocks,
+#transactions,
+#transactionInputs,
+#transactionOutputs,
+#paymentIdTransactions,
+.table {
+  font-size: 9pt;
+  font-family: "Lucida Console", Monaco, monospace;
+}
+
+#paymentIdTransactions_filter, #paymentIdTransactions_paginate, #paymentIdTransactions_length {
+  font-size: 8pt !important;
+}
+
+#poolPieChart {
+  width: 100%;
+}
+
+#globalHashRate {
+  font-weight: bold;
+}
+
+.dataTables_wrapper {
+  width: 100% !important;
+}
+
+.dataTables_empty {
+  text-align: center !important;
+}
+
+.badge[data-badge]::after {
+  background-color: #212721 !important;
+}
+
+.chart {
+  width: 100%;
+  min-height: 242px;
+}
+
+a {
+  color: #000000;
+}
+
+.navbar-link.is-active, .navbar-link:hover, a.navbar-item.is-active, a.navbar-item:hover {
+  color: #000000 !important;
+}
+
+.trtl-amount, .trtl-fee, .trtl-type, .trtl-size, .trtl-txns, .trtl-datetime, .trtl-icon {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.trtl-amount, .trtl-fee {
+  width: 175px;
+}
+
+.trtl-type {
+  width: 100px;
+}
+
+.trtl-size, .trtl-txns {
+  width: 100px;
+}
+
+.trtl-datetime {
+  width: 280px;
+}
+
+.trtl-icon {
+  width: 15px;
+}
+
+.is-ours {
+  background-color: #40c18e !important;
+}
