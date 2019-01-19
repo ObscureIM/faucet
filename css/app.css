@@ -2,7 +2,7 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  background-color: 0000000
+  background-color: 2b2b2b0
 }
 
 .wrapper {
@@ -13,15 +13,15 @@ body {
     display: inline-block;
     padding: 0.3em 1em;
     text-decoration: none;
-    color: #67c5ff;
-    border: solid 2px #67c5ff;
+    color: #;
+    border: solid 2px #2b2b2b;
     border-radius: 3px;
     transition: .4s;
     position: relative;
 }
 
 .square_btn:hover {
-    background: #67c5ff;
+    background: #2b2b2b;
     color: white;
 }
 
@@ -43,12 +43,12 @@ footer {
 }
 
 .is-trtl-black {
-  background-color: #212721 !important;
+  background-color: #2b2b2b !important;
   color: #fff !important;
 }
 
 .is-trtl-green {
-  background-color: #000000 !important;
+  background-color: #2b2b2b !important;
   color: #fff !important;
 }
 
@@ -116,11 +116,11 @@ footer {
 }
 
 a {
-  color: #000000;
+  color: #2b2b2b;
 }
 
 .navbar-link.is-active, .navbar-link:hover, a.navbar-item.is-active, a.navbar-item:hover {
-  color: #000000 !important;
+  color: #2b2b2b !important;
 }
 
 .trtl-amount, .trtl-fee, .trtl-type, .trtl-size, .trtl-txns, .trtl-datetime, .trtl-icon {
