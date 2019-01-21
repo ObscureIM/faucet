@@ -7,16 +7,13 @@ if (typeof google !== 'undefined') {
 }
 
 $(document).ready(function () {
+
+  faucetBalanceUpdate();
   $('#searchButton').click(function () {
     searchForTerm($('#searchValue').val())
   })
 
-  $('#searchValue').keydown(function (e) {
-    setSearchValueErrorState(false)
-    if (e.which === 13) {
-      searchForTerm($('#searchValue').val())
-    }
-  })
+
   $('#receiveButton').click(function () {
     receive($('#receiverAddress').val())
   })
@@ -25,6 +22,26 @@ $(document).ready(function () {
     $(".navbar-menu").toggleClass("is-active");
   });
 })
+
+function faucetBalanceUpdate() {
+  $.ajax({
+    url: "https://faucet-api.herokuapp.com/api/balance",
+    dataType: 'json',
+    type: 'GET',
+    cache: 'false',
+    success: function(header) {
+      totalBal = header.availableBalance + header.lockedAmount
+      totalBal = numeral(Math.floor(totalBal)).format('0,0') + ' XSC'
+      $('#faucetBalance').text(totalBal)
+      faucetBalanceUpdate()
+    },
+    error: function() {
+      console.log("Failed to get XSC balance in faucet wallet")
+      faucetBalanceUpdate()
+    }
+  })
+
+}
 
 function receive(address) {
   $.ajax({

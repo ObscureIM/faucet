@@ -23,7 +23,7 @@
     <script src="./js/third-party.js"></script>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script src="./js/common.js"></script>
-    <script src="./js/main.js"></script>
+
     <script src="./js/config.js"></script>
     <script src="./js/third-party.js"></script>
   </head>
@@ -49,17 +49,8 @@
         <div class="navbar-end">
           <div class="navbar-item">
             <div class="field has-addons">
-              <div class="control has-icons-left">
-                <input id="searchValue" type="text" class="input" placeholder="Search by Block Height / Hash, Transaction Hash, or Payment Id" size="70" maxlength="64">
-                <span class="icon is-small is-left">
-                <i class="fas fa-search "></i>
-                </span>
-              </div>
-              <div class="control">
-                <a class="button is-info is-trtl-green" id="searchButton">
-                Search
-                </a>
-              </div>
+
+
             </div>
           </div>
         </div>
@@ -69,71 +60,15 @@
       <section class="section">
         <div class="container">
           <div class="columns">
-            <div class="column panel">
-              <p class="panel-heading is-trtl-green">
-                <i class="fas fa-server"></i>&nbsp; Network Stats
-              </p>
-              <div class="panel-block same-height">
-                <table class="table is-striped is-fullwidth chart">
-                  <tr>
-                    <th class="trtl-icon"><i class="fas fa-bars"></i></th>
-                    <th>Height</th>
-                    <td id="blockchainHeight" class="has-text-right"></td>
-                  </tr>
-                  <tr>
-                    <th class="trtl-icon"><i class="fas fa-lock"></i></th>
-                    <th>Difficulty</th>
-                    <td id="blockchainDifficulty" class="has-text-right"></td>
-                  </tr>
-                  <tr>
-                    <th class="trtl-icon"><i class="fas fa-tachometer-alt"></i></th>
-                    <th>Network Hash Rate</th>
-                    <td id="blockchainHashRate" class="has-text-right"></td>
-                  </tr>
-                  <tr>
-                    <th class="trtl-icon"><i class="fas fa-award"></i></th>
-                    <th>Block Reward</th>
-                    <td id="blockchainReward" class="has-text-right"></td>
-                  </tr>
-                  <tr>
-                    <th class="trtl-icon"><i class="fas fa-exchange-alt"></i></th>
-                    <th>Total Transactions</th>
-                    <td id="blockchainTransactions" class="has-text-right"></td>
-                  </tr>
-                  <tr>
-                    <th class="trtl-icon"><i class="fas fa-circle-notch"></i></th>
-                    <th>Circulating Supply</th>
-                    <td id="blockchainCirculatingSupply" class="has-text-right"></td>
-                  </tr>
-                  <tr>
-                    <th class="trtl-icon"><i class="fas fa-suitcase-rolling"></i></th>
-                    <th>Total Supply</th>
-                    <td id="blockchainTotalSupply" class="has-text-right"></td>
-                  </tr>
-                  <tr>
-                    <th class="trtl-icon"><i class="fas fa-chart-pie"></i></th>
-                    <th>Current Emission</th>
-                    <td id="blockchainSupplyEmission" class="has-text-right"></td>
-                  </tr>
-                  <tr>
-                    <th class="trtl-icon"><i class="fas fa-code-branch"></i></th>
-                    <th>Next Network Upgrade In (est.)</th>
-                    <td id="nextForkIn" title="Calculating..." class="has-text-right"></td>
-                  </tr>
-                </table>
+            <div class="column panel" id="faucetBalanceDiv">
+
+              <text id = "faucetBalance">123</text>
               </div>
             </div>
-            <div class="column panel">
-              <p class="panel-heading is-trtl-green">
-                <i class="fas fa-chart-bar"></i>&nbsp; Solve the recaptcha for 1 XSD!
-              </p>
-              <div class="panel-block same-height">
-                <div id="blockchainChart" class="chart">&nbsp;</div>
-              </div>
-            </div>
+
           </div>
         </div>
-        <input id="receiverAddress" type="text" class="input" placeholder="Input your XSD Address here" size="70" maxlength="98">
+        <input id="receiverAddress" type="text" class="input" placeholder="Input your XSC Address here" size="70" maxlength="98">
         <div class="wrapper">
           <a href="#" class="square_btn" id="receiveButton">Get your free Obscure!</a>
         </div>

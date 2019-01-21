@@ -9,6 +9,16 @@ body {
     text-align: center;
 }
 
+#faucetBalance {
+  font-size: 60pt;
+  font-family: "Lucida Console", Monaco, monospace;
+  position: relative;
+}
+
+#faucetBalanceDiv {
+  text-align: center;
+}
+
 .square_btn {
     display: inline-block;
     padding: 0.3em 1em;
