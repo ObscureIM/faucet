@@ -9,14 +9,15 @@ if (typeof google !== 'undefined') {
 $(document).ready(function () {
 
   faucetBalanceUpdate();
+
   $('#searchButton').click(function () {
     searchForTerm($('#searchValue').val())
   })
 
-
   $('#receiveButton').click(function () {
     receive($('#receiverAddress').val())
   })
+
   $(".navbar-burger").click(function () {
     $(".navbar-burger").toggleClass("is-active");
     $(".navbar-menu").toggleClass("is-active");
