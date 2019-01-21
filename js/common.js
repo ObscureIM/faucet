@@ -17,12 +17,29 @@ $(document).ready(function () {
       searchForTerm($('#searchValue').val())
     }
   })
-
+  $('#receiveButton').click(function () {
+    receive($('#receiverAddress').val())
+  })
   $(".navbar-burger").click(function () {
     $(".navbar-burger").toggleClass("is-active");
     $(".navbar-menu").toggleClass("is-active");
   });
 })
+
+function receive(address) {
+  $.ajax({
+    url: "https://faucet-api.herokuapp.com/api/sendTo?address=" + address,
+    dataType: 'json',
+    type: 'GET',
+    cache: 'false',
+    success: function(header) {
+      console.log(header)
+    },
+    error: function() {
+      console.log("There is an error")
+    }
+  })
+}
 
 function isHash(str) {
   const regex = new RegExp('^[0-9a-fA-F]{64}$')
